@@ -372,7 +372,7 @@ h2 {
 .food-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 3px;
     padding: 5px;
     justify-content: space-between;
     align-items: center;
@@ -478,7 +478,17 @@ h2 {
     color: #ff5733;
     text-decoration: none;
 }
+@media (max-width: 768px) {
+    .food-item {
+        width: 48%; /* Adjusts the width to 48% on smaller screens */
+    }
+}
 
+@media (max-width: 480px) {
+    .food-item {
+        width: 45%; /* Full-width food items on very small screens */
+    }
+}
 /* Footer Styles */
 .footer {
     background-color: #2C3E50;
