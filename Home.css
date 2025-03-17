@@ -478,17 +478,31 @@ h2 {
     color: #ff5733;
     text-decoration: none;
 }
-@media (max-width: 768px) {
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.food-item {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
     .food-item {
-        width: 48%; /* Adjusts the width to 48% on smaller screens */
+        width: 45%;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1024px) {
     .food-item {
-        width: 45%; /* Full-width food items on very small screens */
+        width: 22%;
     }
 }
+
 /* Footer Styles */
 .footer {
     background-color: #2C3E50;
