@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <section id="hotels" class="hotel-section">
+        <div class="container">
+            <h2>Our Featured Hotels</h2>
+            <p>Discover the best hotels with top-class services.</p>
+            
+            <div class="hotel-list">
+                <!-- Hotel 1 -->
+                <div class="hotel-card">
+                    <img src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hotel 1">
+                    <h3>Luxury Resort</h3>
+                    <p>Located in the heart of the city, offering the best comfort and service.</p>
+                    <button onclick="goToPayment()">Book Now</button>
+                </div>
+                
+                <!-- Hotel 2 -->
+                <div class="hotel-card">
+                    <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hotel 2">
+                    <h3>Mountain View Hotel</h3>
+                    <p>Enjoy a breathtaking view of the mountains with premium amenities.</p>
+                    <button onclick="goToPayment()">Book Now</button>
+                </div>
+                
+                <!-- Hotel 3 -->
+                <div class="hotel-card">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hotel 3">
+                    <h3>Beachside Paradise</h3>
+                    <p>A perfect getaway by the beach with luxurious services.</p>
+                    <button onclick="goToPayment()">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p>Explore our delicious food options.</p>
+            
+            <div class="menu-list">
+                <!-- Menu Item 1 -->
+                <div class="menu-card">
+                    <img src="https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food Item 1">
+                    <h3> Chicken</h3>
+                    <p>Served with fresh vegetables and sauce.</p>
+                    <span>$12.99</span>
+                    <button onclick="goToPayment()">Add to Cart</button>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="menu-card">
+                    <img src="https://images.pexels.com/photos/31119092/pexels-photo-31119092/free-photo-of-delicious-cheese-and-meat-lasagna-on-plate.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food Item 2">
+                    <h3>Pasta Delight</h3>
+                    <p>Delicious creamy pasta with cheese.</p>
+                    <span>$10.99</span>
+                    <button onclick="goToPayment()">Add to Cart</button>
+                </div>
+                
+                <!-- Menu Item 3 -->
+                <div class="menu-card">
+                    <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food Item 3">
+                    <h3>Cheeseburger</h3>
+                    <p>Juicy beef patty with melted cheese.</p>
+                    <span>$8.99</span>
+                    <button onclick="goToPayment()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function goToPayment() {
+            window.location.href = "payment.html";
+        }
+    </script>
+    
+    <style>
+        .hotel-section, .menu-section {
+            padding: 50px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        .hotel-list, .menu-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .hotel-card, .menu-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+        .hotel-card img, .menu-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .hotel-card h3, .menu-card h3 {
+            margin: 10px 0;
+        }
+        .hotel-card button, .menu-card button {
+            padding: 10px;
+            background: #ff5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .menu-card span {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+    
+</body>
+</html>

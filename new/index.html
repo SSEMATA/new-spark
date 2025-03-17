@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <p><title>Foodspark</title></p>
+</head>
+<body>
+    <!--sidebar-->
+    <div class="sidebar">
+
+        <!--list of menu-->
+        <div class="sidebar">
+            <!--logo-->
+            <div class="logo-container">
+                <img src="foodspark.png" alt="Logo" class="logo" id="logo-img">
+              </div>
+            <p>
+                <h1 class="logo">Foodspark</h1>
+            </p>
+            
+        
+            <!--list of menu-->
+            <div class="sidebar-menus">
+                <a href="#" class="menu-item">
+                    <ion-icon name="storefront-outline"></ion-icon>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <ion-icon name="receipt-outline"></ion-icon>
+                    <span>Bills</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <ion-icon name="wallet-outline"></ion-icon>
+                    <span>Wallet</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <span>Notifications</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                    <span>Contact Us</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <ion-icon name="settings-outline"></ion-icon>
+                    <span>Settings</span>
+                </a>
+        
+                <!--logout-->
+                <div class="sidebar-logout"></div>
+                <a href="#" class="menu-item">
+                    <ion-icon name="logout-outline"></ion-icon>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <!--main-->
+    <div class="main">
+        <!--main navbar-->
+        <div class="main-navbar">
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="What food do you want to eat?">
+                <button class="search-button">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="profile">
+                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a class="user" href="profile1"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+        
+            <!-- Sign In and Sign Up buttons -->
+            <div class="auth-buttons">
+                <a href="#"><button class="btn-auth">Sign In</button></a>
+                <a href="homestay form"></a><button class="btn-auth">Sign Up</button></a>
+            </div>
+            <!--aminations-->
+            <div class="image-slider">
+                <img src="goat pizza.png" class="slide active">
+                <img src="photo1.png" class="slide">
+                <img src="pilau5.png" class="slide">
+                <img src="rice and beef.jpg" class="slide">
+                <img src="rice and beef.jpg" class="slide">
+                <!-- ... -->
+                <div class="text-overlay">
+                    <h1>Sweet chicken for your family</h1>
+                    <p>Buy now</p>
+                  </div>
+              </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+
+    <!--mainlight-->
+    <div class="main-highlight">
+        <div class="main-header">
+            <h2 class="main-title">
+Recommendations
+            </h2>
+            <div class="main-arrow">
+                <ion-icon  class="back" name="chevron-back-circle-outline"></ion-icon>
+                <ion-icon  class="next" name="chevron-forward-circle-outline"></ion-icon>
+            </div>
+        </div>
+        <!--highlight menu-->
+        <div class="highlight-wrapper">
+            <div class="highlight-card">
+                <img class="highlight-img" src="pillawo kitchen.jpg">
+                <div class="highlight-desc">
+                    <h4>Pilau and Chicken</h4>
+                    <p class="price">UGX 16,000</p>
+                </div>
+            </div>
+            
+            <div class="highlight-card">
+                <img class="highlight-img" src="pizza at cafe de forte.jpg">
+                <div class="highlight-desc">
+                    <h4>pizza</h4>
+                    <p class="price">UGX 35000</p>
+                </div>
+            </div> 
+            <div class="highlight-card">
+                <img class="highlight-img" src="beans and all food.png">
+                <div class="highlight-desc">
+                    <h4>All food and Beans</h4>
+                    <p class="price">UGX 8,000</p>
+                </div>
+            </div> 
+            <div class="highlight-card">
+                <img class="highlight-img" src="rice and beef.jpg">
+                <div class="highlight-desc">
+                    <h4>Rice and Beef</h4>
+                    <p class="price">UGX 9,000</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+<div class="color">
+    <!--main menus / order-->
+    <div class="main-menus">
+        <!--filter section-->
+        <div class="main-filter">
+            <div>
+                <h2 class="main-title">Menu <br>Category</h2>
+                <div class="main-arrow">
+                    <ion-icon  class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon  class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+
+                </div>
+            </div>
+            <div class="filter-wrapper">
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="restaurant-outline"></ion-icon>
+
+                    </div>
+                    <p>All menus</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="Fast-food-outline"></ion-icon>
+                    </div>
+                    <p>Chicken</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="pizza-outline"></ion-icon>
+                    </div>
+                    <p>Pizza</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <ion-icon name="wine-outline"></ion-icon>
+                </div>
+                <p>Wine</p>
+        </div>
+        
+        <div class="filter-card">
+            <div class="filter-icon">
+                <ion-icon name="ice-cream-outline"></ion-icon>
+            </div>
+            <p>Ice-cream</p>
+    </div>
+    <div class="filter-card">
+        <div class="filter-icon">
+            <ion-icon name="cafe-outline"></ion-icon>
+        </div>
+        <p>Coffee</p>
+    </div>
+    <div class="filter-card">
+        <div class="filter-icon">
+            <ion-icon name="fish-outline"></ion-icon>
+        </div>
+        <p>Sea food</p>
+    </div>
+    <div class="filter-card">
+        <div class="filter-icon">
+            <ion-icon name="nutrition-outline"></ion-icon>
+        </div>
+        <p>Healthy food</p>
+    </div>
+</div>
+</div>
+<hr class="divider">
+
+
+
+
+<div class="select-food">
+    <div class="food-container">
+        <div class="food-item" data-id="1" data-price="45000">
+            <img src="Fried chicken.png" alt="Burger" class="food-img">
+            <h3 class="food-name">Burger</h3>
+            <p class="food-description">Juicy grilled burger with lettuce, tomato, and cheese.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="2" data-price="50000">
+            <img src="goat pizza.png" alt="Pizza" class="food-img">
+            <h3 class="food-name">goat pizza</h3>
+            <p class="food-description">Wood-fired pizza with pepperoni, mozzarella, and fresh basil.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="3" data-price="8000">
+            <img src="katogo.png" alt="Salad" class="food-img">
+            <h3 class="food-name">Katogo</h3>
+            <p class="food-description">Fresh garden salad with a mix of lettuce, tomato, and cucumber.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food-container">
+        <div class="food-item" data-id="4" data-price="30000">
+            <img src="burger.jpeg" alt="Burger" class="food-img">
+            <h3 class="food-name">Burger</h3>
+            <p class="food-description">Juicy grilled burger with lettuce, tomato, and cheese.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="5" data-price="15000">
+            <img src="pilau5.png" alt="Pizza" class="food-img">
+            <h3 class="food-name">goat pizza</h3>
+            <p class="food-description">Grilled meat.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="5" data-price="5000">
+            <img src="rolex.png" alt="Salad" class="food-img">
+            <h3 class="food-name">Rolex</h3>
+            <p class="food-description">Rolex of eggs</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food-container">
+        <div class="food-item" data-id="6" data-price="15000">
+            <img src="chips and chicken.png" alt="Burger" class="food-img">
+            <h3 class="food-name">Chips and chicken</h3>
+            <p class="food-description">Chips and chicken</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="2" data-price="12.99">
+            <img src="photo1.png" alt="Pizza" class="food-img">
+            <h3 class="food-name">Beef</h3>
+            <p class="food-description">Wood-fired beef with pepperoni, mozzarella, and fresh basil.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="3" data-price="7.49">
+            <img src="whole chopped chicken.png" alt="Salad" class="food-img">
+            <h3 class="food-name">Whole chopped chicken</h3>
+            <p class="food-description">Good chopped chicken fried with natural oils.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food-container">
+        <div class="food-item" data-id="1" data-price="8.99">
+            <img src="roasted goat.png" alt="Burger" class="food-img">
+            <h3 class="food-name">Roasted goat meat</h3>
+            <p class="food-description">Delicious roasted meat.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="2" data-price="12.99">
+            <img src="spicy chicken pizza.png" alt="Pizza" class="food-img">
+            <h3 class="food-name">spicy chicken pizza</h3>
+            <p class="food-description">spicy chicken pizza from local chicken</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="3" data-price="7.49">
+            <img src="local food + chicken.png" alt="Salad" class="food-img">
+            <h3 class="food-name">Local food with Chicken</h3>
+            <p class="food-description">Local food sweet with Chicken</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food-container">
+        <div class="food-item" data-id="1" data-price="8.99">
+            <img src="local food.png" alt="Burger" class="food-img">
+            <h3 class="food-name">local food</h3>
+            <p class="food-description">African local food.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="2" data-price="12.99">
+            <img src="Chicken1.png" alt="Pizza" class="food-img">
+            <h3 class="food-name">Whole chicken</h3>
+            <p class="food-description">Delicious chicken for your family</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="3" data-price="7.49">
+            <img src="katogo.png" alt="Salad" class="food-img">
+            <h3 class="food-name">Katogo</h3>
+            <p class="food-description">Fresh garden salad with a mix of lettuce, tomato, and cucumber.</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food-container">
+        <div class="food-item" data-id="1" data-price="8.99">
+            <img src="kakomaddo 3.png" alt="Burger" class="food-img">
+            <h3 class="food-name">Kakomando</h3>
+            <p class="food-description">Delicious kakomaddo of beans</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="2" data-price="12.99">
+            <img src="pizza at cafe de forte.jpg" alt="Pizza" class="food-img">
+            <h3 class="food-name">Pizza</h3>
+            <p class="food-description">Chicken pizza</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item" data-id="3" data-price="7.49">
+            <img src="rice and beef.jpg" alt="Salad" class="food-img">
+            <h3 class="food-name">Rice and beef</h3>
+            <p class="food-description">Fresh garden pilau and beef with a mix of lettuce, green papers, tomato, and onions</p>
+            <div class="food-actions">
+                <button class="btn-add">Add to Cart</button>
+                <div class="quantity-controls">
+                    <button class="btn-decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="btn-increase">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <strong>Total: $<span id="cart-total">0.00</span></strong>
+        </div>
+        <button id="checkout-button">Checkout</button>
+    </div>
+
+    
+</div>
+
+
+
+
+
+</div>
+</div>
+
+</body>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-col">
+            <h3>About Food Time</h3>
+            <p>Get the food you love, wherever you are. Foodspark makes ordering effortless. Browse local menus, track your order, and enjoy your favorite meals at home, office, or on-the-go.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+                <li><ion-icon name="call-outline"></ion-icon> +256 786023858</li>
+                <li><ion-icon name="mail-outline"></ion-icon> info@foodspark.com</li>
+                <li><ion-icon name="location-outline"></ion-icon> Fort Portal City, Uganda</li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="footer-socials">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Food Time. All rights reserved.</p>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="index.js">
+    let cart = [];
+let totalPrice = 0;
+
+function updateQuantity(item, change) {
+    const quantityElement = document.getElementById(`${item}-quantity`);
+    let currentQuantity = parseInt(quantityElement.innerText);
+
+    currentQuantity += change;
+    if (currentQuantity < 0) currentQuantity = 0; // Prevent negative quantity
+
+    quantityElement.innerText = currentQuantity;
+}
+
+function addToCart(itemName, itemPrice) {
+    const quantityElement = document.getElementById(`${itemName.toLowerCase()}-quantity`);
+    const quantity = parseInt(quantityElement.innerText);
+
+    if (quantity > 0) {
+        cart.push({ name: itemName, price: itemPrice, quantity: quantity });
+        totalPrice += itemPrice * quantity;
+
+        // Update cart display
+        updateCartDisplay();
+        
+        // Reset quantity after adding to cart
+        quantityElement.innerText = 0;
+    } else {
+        alert(`Please select at least one ${itemName}.`);
+    }
+}
+
+function updateCartDisplay() {
+    const cartItemsElement = document.getElementById('cart-items');
+    cartItemsElement.innerHTML = ''; // Clear current cart display
+
+    cart.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.innerText = `${item.name} - $${item.price} x ${item.quantity}`;
+        cartItemsElement.appendChild(listItem);
+    });
+
+    document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+}
+</script>
+
+</html>

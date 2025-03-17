@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurants</title>
+</head>
+<body>
+    <section id="hotels" class="hotel-section">
+        <div class="container">
+            <h2>Our Featured Hotels</h2>
+            <p>Discover the best hotels with top-class services.</p>
+            
+            <div class="hotel-list">
+                <!-- Hotel 1 -->
+                <div class="hotel-card">
+                    <img src="https://images.pexels.com/photos/699544/pexels-photo-699544.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hotel 1">
+                    <h3>Capital Restaurant</h3>
+                    <p>Located in the heart of the city, offering the best comfort and service.</p>
+                    <button>Book Now</button>
+                </div>
+                
+                <!-- Hotel 2 -->
+                <div class="hotel-card">
+                    <img src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hotel 2">
+                    <h3>Mountains of the Moon</h3>
+                    <p>Enjoy a breathtaking view of the mountains with premium amenities.</p>
+                    <button>Book Now</button>
+                </div>
+                
+                <!-- Hotel 3 -->
+                <div class="hotel-card">
+                    <img src="https://images.pexels.com/photos/31176992/pexels-photo-31176992/free-photo-of-delicious-mediterranean-mezze-spread-on-wooden-table.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hotel 3">
+                    <h3>Master Snacks</h3>
+                    <p>A perfect getaway by the beach with luxurious services.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .hotel-section {
+            padding: 50px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        .hotel-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .hotel-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+        .hotel-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+        }
+        .hotel-card h3 {
+            margin: 10px 0;
+        }
+        .hotel-card button {
+            padding: 10px;
+            background: #ff5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    
+</body>
+</html>

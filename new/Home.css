@@ -1,0 +1,563 @@
+/* Header */
+.header {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #2C3E50;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: gold;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+h1 {
+    text-align: center;
+    font-size: 2.1em;
+    font-weight: bold;
+    color: white;
+}
+h2 {
+    font-style: italic;
+    text-align: center;
+    color: white;
+
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Profile Section */
+.profile {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.profile-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#profile-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.profile-menu {
+    gap: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    z-index: 10;
+}
+
+.profile-menu button {
+    background-color: #44f156;
+    color: white;
+    border: none;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-menu button:hover {
+    background-color: #45a049;
+}
+
+/* Search container styling */
+.search-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-container input {
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Search Results Styling */
+#search-results {
+    position: absolute;
+    top: 100%; /* Below the search input */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    padding: 10px;
+}
+
+/* Grid layout for search results */
+#search-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* Each search result item */
+.search-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: black;
+}
+
+.result-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.result-link:hover {
+    opacity: 0.8; /* Optional hover effect */
+}
+
+/* Images in search results */
+.search-result img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Text in search results */
+.search-result span {
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hide empty rows */
+#search-results:empty {
+    display: none;
+}
+
+#homepage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Faded black background */
+    z-index: 2;
+    display: none; /* Hidden by default */
+}
+
+#search-result-display {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 3;
+    display: none; /* Hidden by default */
+}
+/* Position the filter icon container at the extreme left */
+.filter-container {
+    position: fixed; /* Fixed positioning to stay on screen */
+    top: 275px; /* Vertically center the filter icon */
+    left: 10px; /* Align the icon to the left side of the page */
+    transform: translateY(-50%); /* Adjust the vertical position to truly center */
+    z-index: 10000; /* Ensure it stays above other elements */
+  }
+  
+  /* Filter Icon styling */
+  .filter-icon {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    z-index: 10001; /* Make sure it's above all other content */
+  }
+  
+  .filter-icon:hover {
+  }
+  
+  /* Dropdown Styling */
+  .filter-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px; /* Position it below the filter icon */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 10000; /* Ensure dropdown is above other content */
+  }
+  
+  .filter-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-dropdown li {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .filter-dropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .filter-dropdown li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .filter-dropdown li a:hover {
+    color: #007bff;
+  }
+/* Hide and Show Upload/Change/Delete Buttons */
+#upload-photo, #change-photo, #delete-photo {
+    display: block;
+}
+
+#change-photo, #delete-photo {
+    display: none;
+}
+
+/*cart*/
+
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    right: 20px;
+    top: 80px;
+
+}
+#cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+
+}
+.cart-table-container {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 95px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 400px;
+}
+.collapse-btn {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.cart-table, .cart-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+.cart-actions button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.cancel-btn {
+    background-color: red;
+    color: white;
+}
+.order-btn {
+    background-color: green;
+    color: white;
+}
+
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-item {
+    width: 23%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.add-to-cart {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.minus {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.plus {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.item-quantity {
+    margin: 0 10px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    min-width: 30px;
+    text-align: center;
+}
+.order-form-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contact-section {
+    padding: 50px;
+    background: #f8f9fa;
+    text-align: center;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 10px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-info {
+    max-width: 300px;
+    text-align: left;
+}
+.social-links a {
+    display: block;
+    margin: 5px 0;
+    color: #ff5733;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    background-color: gold;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2em;
+  }
+  
+  .footer-links,
+  .footer-contact {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-contact li {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    background-color: gold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .footer-socials a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    background-color: #1A252F;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  .footer .footer-bottom {
+    text-align: center;
+    height: 1px;
+  }

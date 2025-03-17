@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hotels</title>
+</head>
+<body>
+    <header class="header">
+        <!--cart icon -->
+        <div class="cart-icon" id="cart-icon">
+            <span id="cart-badge">0</span>
+        </div>
+        <div class="cart-table-container" style="display: none;">
+            <button class="collapse-btn" id="collapse-btn">Collapse</button>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Food Name</th>
+                        <th>Qty</th>
+                        <th>Price (UGX)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+            </table>
+            <table class="cart-summary">
+                <tr>
+                    <td>Total Items:</td>
+                    <td id="total-items">0</td>
+                </tr>
+                <tr>
+                    <td>Total Price (UGX):</td>
+                    <td id="total-price">0</td>
+                </tr>
+            </table>
+            <div class="cart-actions">
+                <button class="cancel-btn">Cancel</button>
+                <button class="order-btn">Order</button>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="Home.html" class="logo-link"><img src="logo (1).png" alt="Logo" class="logo-image"></a>
+        </div>
+        <!-- Website Info -->
+        <div class="header-center">
+            <h1>HOTELS</h1>
+            <h2>You're the quickest food delivery partner</h2>
+            <div class="profile">
+                <div class="profile-pic">
+                    <img src="user.png" alt="Profile Icon" id="profile-image">
+                </div>
+                <div id="profile-menu" class="profile-menu" hidden>
+                    <button id="upload-photo" onclick="document.getElementById('profile-upload').click()">Upload Photo</button>
+                    <button id="change-photo" hidden onclick="document.getElementById('profile-upload').click()">Change Photo</button>
+                    <button id="delete-photo" hidden onclick="deleteProfile()">Delete Photo</button>
+                </div>
+                <input type="file" id="profile-upload" accept="image/*" onchange="uploadProfile(event)" hidden>
+            </div>
+            
+ <!-- Navigation -->
+ <nav class="nav-links">
+    <a href="nyaika hotel order.html">Nyaika hotel</a>
+    <a href="mtns of the moon order.html">Mountains of the moon</a>
+    
+</nav>

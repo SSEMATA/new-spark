@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARK - Food Delivery Platform</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <div class="landing-container">
+        <div class="header">
+            <h1>Welcome to SPARK</h1>
+            <h2>Your quickest food delivery partner</h2>
+        </div>
+
+        <div class="form-container">
+            <h3>Sign Up</h3>
+            <form id="signup-form" onsubmit="submitForm(event)">
+                <label for="username">Full Name:</label>
+                <input type="text" id="username" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+
+                <button type="submit" id="submit-button">Sign Up</button>
+            </form>
+
+            <div class="login-redirect">
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="landing.js"></script>
+</body>
+</html>

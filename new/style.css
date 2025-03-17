@@ -1,0 +1,743 @@
+:root {
+    --primarycolor: #0e6253;
+    --secondarycolor: #ffc107;
+    --whitecolor: #fff;
+    --blackcolor: #222;
+    --softcolor: #d9f2ee;
+    --darhGreycolor: #a7a7a7;
+    --greycolor: #f5f5f5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'open sans', sans-serif;
+}
+.logo {
+  color: var(--whitecolor);
+  margin-top: 100px;
+}
+.logo:hover {
+  background-color: black;
+  color: red;
+  cursor: pointer;
+}
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    background-color: var(--primarycolor);
+    color: var(--whitecolor);
+
+}
+.sidebar-menus {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+}
+
+.menu-item {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    text-decoration: none;
+    color: inherit; /* Ensures text inherits the color from its parent */
+    padding: 10px 0;
+}
+
+.menu-item ion-icon {
+    font-size: 24px;
+    margin-right: 10px; /* Adds some spacing between the icon and the text */
+}
+
+.menu-item span {
+    font-size: 16px; /* Adjust font size as needed */
+}
+.sidebar-menus a ion-icon {
+    font-size: 20px;
+}
+.sidebar-menus a:hover {
+    background-color: var(--secondarycolor);
+    border-radius: 20px;
+}
+.sidebar-logout {
+    margin-top: auto; /* Pushes the logout item to the bottom */
+}
+
+.sidebar-menus {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures the sidebar takes full height */
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--softcolor);
+    margin-left: 250px;
+    padding: 2%;
+}
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-toggle {
+    display: none;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* Adjusts the margin as needed */
+}
+
+.search-input {
+    width: 400px; /* Adjust width as needed */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.search-input:focus {
+    border-color: #4285f4; /* Google's blue color */
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.4);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -40px; /* Aligns the button inside the search bar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+}
+
+.search-button ion-icon {
+    font-size: 20px; /* Adjust icon size as needed */
+}
+.profile {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f8f8f8; /* Background color of the header */
+    position: absolute; /* Allows positioning */
+    top: 0; /* Align to the top of the page */
+    right: 0; /* Align to the right */
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+  }
+  
+  .profile a {
+    margin-left: 15px; /* Space between icons */
+    text-decoration: none;
+    color: #333; /* Icon color */
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+  
+  .profile a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  .main-highlight {
+    margin: 3% 0;
+    padding: 2%;
+    background-color: var(--secondarycolor);
+    border-radius: 8px;
+  }
+  .main-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-title {
+    font-size: 20px;
+  }
+  .main-arrow {
+    font-size: 20px
+  }
+  .back, .next {
+    cursor: pointer
+  }
+  .back:hover, .next:hover {
+color: var(--primarycolor);
+  }
+  .highlight-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    border-radius: 8px;
+    gap: 1.5rem;
+    overflow-x: hidden;
+  }
+  .highlight-card {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    width: 80px;
+    height: 100%;
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: var(--greycolor);
+    cursor: pointer;
+  }
+  .highlight-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .highlight-desc h4 {
+color: var(--primarycolor);
+
+  }
+  .highlight-desc p {
+    color: var(--blackcolor);
+    font-size: 13px;
+  }
+  .highlight-card:hover {
+    background-color: var(--whitecolor);
+    box-shadow: rgba(176, 176, 176, 0.2) 0px 2px 8px, 0px;
+  }
+  .main-menus {
+    min-height: 100%;
+    background-color: var(--greycolor);
+    padding: 2%;
+    border-radius: 8px;
+  }
+  .main-filter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem
+  }
+  .back-menus, .next-menus {
+    cursor: pointer;
+
+  }
+  .next-menus:hover, .back-menus:hover{
+    color: var(--primarycolor);
+  }
+  .filter-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100px;
+    gap: 1.2rem
+  }
+  .filter-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 80px;
+    height: 100%;
+    background-color: var(--whitecolor);
+    color: var(--blackcolor);
+    border-radius: 8px;
+    border: 1px solid var(--softGreencolor);
+    font-size: 14px;
+    cursor: pointer;
+
+  }
+  .filter-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height:60%;
+    font-size: 30px;
+    background-color: rgb(193, 205, 193);
+    color: var(--primarycolor);
+    border-radius: 8px;
+    
+  }
+  .filter-card:hover {
+    background-color: var(--primarycolor);
+    color: var(--whitecolor);
+  }
+  .filter-card:hover .filter-icon {
+    background-color: var(--whitecolor)
+  }
+  .divider {
+    margin: 1rem 0;
+    height: 1px;
+    width: 100%;
+    color: red;
+    border: none;
+  }
+  .main-detail {
+margin: 1rem 0 1.5rem 0;
+
+  }
+  .detail-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    margin-top: 1rem;
+    gap: 2%;
+    border-radius: 8px;
+  }
+  /* here*/
+  .detail-card {
+    display: flex; /* Flexbox for main container */
+    flex-direction: column; /* Stacks the image above the text section */
+    align-items: flex-start; /* Aligns items to the start of the container */
+    width: 300px; /* Adjust width as needed */
+    padding: 8px;
+    border: 1px solid #ccc; /* Optional: For visual clarity */
+}
+
+.detail-img {
+    width: 100%; /* Makes image responsive within the card */
+    height: auto; /* Maintains aspect ratio of the image */
+    margin-bottom: 8px; /* Adds space between image and text */
+}
+
+.detail-desc {
+    display: flex; /* Flexbox for text and icon container */
+    justify-content: space-between; /* Distributes space between text and icon */
+    align-items: center; /* Centers text and icon vertically */
+    width: 100%; /* Ensures the description takes full width */
+}
+
+.text-section {
+    display: flex; /* Flexbox for stacking text elements */
+    flex-direction: column; /* Stacks h4 and p elements vertically */
+    margin-right: auto; /* Pushes the text to the left */
+    justify-content: center; /* Centers text vertically within the container */
+}
+
+.detail-favorite {
+    margin-left: auto; /* Pushes the icon to the far right */
+    cursor: pointer; /* Adds a pointer cursor to the icon */
+    font-size: 24px; /* Adjusts the size of the icon */
+    color: #555; /* Sets the color of the icon */
+}
+.cards-container {
+  display: flex; /* Makes the container a flexbox */
+  gap: 10px; /* Adds a small gap between each card */
+  padding: 10px;
+  flex-wrap: wrap; /* Allows the cards to wrap to a new line if necessary */
+  justify-content: flex-start; /* Aligns cards to the left */
+}
+
+.detail-card {
+  display: flex; /* Flexbox for each detail card */
+  flex-direction: column; /* Stacks the image above the text section */
+  align-items: center; /* Aligns items in the center horizontally */
+  width: 180px; /* Adjust width as needed to make cards closer */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: For visual clarity */
+  background-color: #fff; /* Adds a background color for each card */
+}
+
+.detail-img {
+  width: 100%; /* Makes image responsive within the card */
+  height: auto; /* Maintains aspect ratio of the image */
+  margin-bottom: 10px; /* Adds space between the image and text */
+  border: none; /* Removes any borders around the image */
+  outline: none; /* Removes any outlines around the image */
+  box-shadow: none; /* Removes any shadows around the image */
+
+}
+
+.detail-desc {
+  display: flex; /* Flexbox for text and icon container */
+  justify-content: space-between; /* Distributes space between text and icon */
+  align-items: center; /* Centers text and icon vertically */
+  width: 100%; /* Ensures the description takes full width */
+}
+
+.text-section {
+  display: flex; /* Flexbox for stacking text elements */
+  flex-direction: column; /* Stacks h4 and p elements vertically */
+  margin-right: auto; /* Pushes the text to the left */
+  justify-content: center; /* Centers text vertically within the container */
+}
+
+.detail-favorite {
+  margin-left: auto; /* Pushes the icon to the far right */
+  cursor: pointer; /* Adds a pointer cursor to the icon */
+  font-size: 24px; /* Adjusts the size of the icon */
+  color: #555; /* Sets the color of the icon */
+}
+.detail-favorite:hover {
+  color: rgb(0, 183, 255);
+}
+.detail-desc:hover {
+  filter: opacity(1);
+  box-shadow: rgba(176, 176, 176, 0.2);
+  color: var(--primarycolor);
+}
+@media screen and (max-width:640px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    margin-left: 0;
+  }
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links,
+.footer-contact {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-socials a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #1A252F;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+/* Profile and cart section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Cart and user icons */
+.cart, .user {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+/* Authentication buttons container */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button styles for Sign In and Sign Up */
+.auth-buttons .btn {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+/*new*/
+
+/* Empty space on the left */
+.left-space {
+  flex: 1;
+}
+
+/* Buttons on the right-hand side, horizontally aligned */
+.auth-buttons {
+  display: flex;
+  flex-direction: row; /* Place buttons in a horizontal line */
+  gap: 1rem; /* Space between the buttons */
+  align-items: center; /* Vertically center the buttons */
+  justify-content: flex-end; /* Align buttons to the right */
+  animation: slide-in 1s ease-out; /* Apply slide-in animation */
+}
+
+/* Button styles */
+.btn-auth {
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s; /* Adds smooth hover transitions */
+}
+
+/* Button hover effect: scale and color change */
+.btn-auth:hover {
+  background-color: #357AE8;
+  transform: scale(1.1); /* Button enlarges slightly */
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slide-in {
+  0% {
+      transform: translateX(100%); /* Start from the right offscreen */
+      opacity: 0; /* Start with invisible */
+  }
+  100% {
+      transform: translateX(0); /* End at the original position */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+/* aminations*/
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 100%; /* start from right */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: left 2s;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  left: 0; /* move to center */
+}
+
+.inactive {
+  left: -100%; /* move to left */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+/* img-logo */
+.logo-container {
+  position: absolute;
+  top: 5%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.logo {
+  width: 100px; /* Small size */
+  border-radius: 50%; /* Removes sharp edges */
+  animation: fadeInOut 4s infinite; /* Animation lasting 4s, repeating infinitely */
+}
+
+/* Keyframes for fading animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; }   /* Completely invisible */
+  50% { opacity: 1; }  /* Fully visible */
+  100% { opacity: 0; } /* Back to invisible */
+}
+
+
+
+
+
+
+select-food {
+  font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+.food-container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.food-item {
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.food-img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px; /* Rounded edges, not fully round */
+  transition: filter 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.food-name {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.food-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.food-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-add, .btn-increase, .btn-decrease {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-add {
+  font-size: 16px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.btn-increase, .btn-decrease {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cart styling */
+.cart-container {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: right;
+}
+
+#checkout-button {
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* Hover Effect: Change color */
+.food-img:hover {
+  filter: sepia(70%) saturate(150%) hue-rotate(180deg);
+  transform: scale(1.05); /* Slight zoom */
+}
+
+/* Click Effect: Turn red */
+.food-img:active {
+  filter: sepia(100%) hue-rotate(-50deg) saturate(700%);
+}
