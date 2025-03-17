@@ -3,514 +3,726 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <p><title>Foodspark</title></p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>spark</title>
+    <meta property="og:title" content="Spark Food Delivery - Order Your Favorite Meals">
+<meta property="og:description" content="Get delicious food delivered to your doorstep. Explore top-rated restaurants and meals.">
+<meta property="og:image" content="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=600">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spark Food Delivery - Order Your Favorite Meals">
+<meta name="twitter:description" content="Get delicious food delivered to your doorstep. Explore top-rated restaurants and meals.">
+<meta name="twitter:image" content="https://yourwebsite.com/path-to-image.jpg">
 </head>
 <body>
-    <!--sidebar-->
-    <div class="sidebar">
-
-        <!--list of menu-->
-        <div class="sidebar">
-            <!--logo-->
-            <div class="logo-container">
-                <img src="foodspark.png" alt="Logo" class="logo" id="logo-img">
-              </div>
-            <p>
-                <h1 class="logo">Foodspark</h1>
-            </p>
-            
-        
-            <!--list of menu-->
-            <div class="sidebar-menus">
-                <a href="#" class="menu-item">
-                    <ion-icon name="storefront-outline"></ion-icon>
-                    <span>Home</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <ion-icon name="receipt-outline"></ion-icon>
-                    <span>Bills</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <ion-icon name="wallet-outline"></ion-icon>
-                    <span>Wallet</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <ion-icon name="notifications-outline"></ion-icon>
-                    <span>Notifications</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
-                    <span>Contact Us</span>
-                </a>
-                <a href="#" class="menu-item">
-                    <ion-icon name="settings-outline"></ion-icon>
-                    <span>Settings</span>
-                </a>
-        
-                <!--logout-->
-                <div class="sidebar-logout"></div>
-                <a href="#" class="menu-item">
-                    <ion-icon name="logout-outline"></ion-icon>
-                    <span>Logout</span>
-                </a>
+    <header class="header">
+        <!--cart icon -->
+        <div class="cart-icon" id="cart-icon">
+            <span id="cart-badge">0</span>
+        </div>
+        <div class="cart-table-container" style="display: none;">
+            <button class="collapse-btn" id="collapse-btn">Collapse</button>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Food Name</th>
+                        <th>Qty</th>
+                        <th>Price (UGX)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+            </table>
+            <table class="cart-summary">
+                <tr>
+                    <td>Total Items:</td>
+                    <td id="total-items">0</td>
+                </tr>
+                <tr>
+                    <td>Total Price (UGX):</td>
+                    <td id="total-price">0</td>
+                </tr>
+            </table>
+            <div class="cart-actions">
+                <button class="cancel-btn">Cancel</button>
+                <button class="order-btn">Order</button>
             </div>
         </div>
-        
-    </div>
-    <!--main-->
-    <div class="main">
-        <!--main navbar-->
-        <div class="main-navbar">
-            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="What food do you want to eat?">
-                <button class="search-button">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
-            </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="Home.html" class="logo-link"><img src="logo (1).png" alt="Logo" class="logo-image"></a>
+        </div>
+        <!-- Website Info -->
+        <div class="header-center">
+            <h1>SPARK</h1>
+            <h2>You're the quickest food delivery partner</h2>
             <div class="profile">
-                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                <a class="user" href="profile1"><ion-icon name="person-outline"></ion-icon></a>
-            </div>
-        </div>
-        
-            <!-- Sign In and Sign Up buttons -->
-            <div class="auth-buttons">
-                <a href="#"><button class="btn-auth">Sign In</button></a>
-                <a href="homestay form"></a><button class="btn-auth">Sign Up</button></a>
-            </div>
-            <!--aminations-->
-            <div class="image-slider">
-                <img src="goat pizza.png" class="slide active">
-                <img src="photo1.png" class="slide">
-                <img src="pilau5.png" class="slide">
-                <img src="rice and beef.jpg" class="slide">
-                <img src="rice and beef.jpg" class="slide">
-                <!-- ... -->
-                <div class="text-overlay">
-                    <h1>Sweet chicken for your family</h1>
-                    <p>Buy now</p>
-                  </div>
-              </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-    
-
-    <!--mainlight-->
-    <div class="main-highlight">
-        <div class="main-header">
-            <h2 class="main-title">
-Recommendations
-            </h2>
-            <div class="main-arrow">
-                <ion-icon  class="back" name="chevron-back-circle-outline"></ion-icon>
-                <ion-icon  class="next" name="chevron-forward-circle-outline"></ion-icon>
-            </div>
-        </div>
-        <!--highlight menu-->
-        <div class="highlight-wrapper">
-            <div class="highlight-card">
-                <img class="highlight-img" src="pillawo kitchen.jpg">
-                <div class="highlight-desc">
-                    <h4>Pilau and Chicken</h4>
-                    <p class="price">UGX 16,000</p>
+                <div class="profile-pic">
+                    <img src="user.png" alt="Profile Icon" id="profile-image">
                 </div>
+                <div id="profile-menu" class="profile-menu" hidden>
+                    <button id="upload-photo" onclick="document.getElementById('profile-upload').click()">Upload Photo</button>
+                    <button id="change-photo" hidden onclick="document.getElementById('profile-upload').click()">Change Photo</button>
+                    <button id="delete-photo" hidden onclick="deleteProfile()">Delete Photo</button>
+                </div>
+                <input type="file" id="profile-upload" accept="image/*" onchange="uploadProfile(event)" hidden>
             </div>
             
-            <div class="highlight-card">
-                <img class="highlight-img" src="pizza at cafe de forte.jpg">
-                <div class="highlight-desc">
-                    <h4>pizza</h4>
-                    <p class="price">UGX 35000</p>
+            <!-- Search Section -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    oninput="searchFood(event)" 
+                    placeholder="Search food or hotels..." 
+                />
+                <button onclick="searchFoodManual()">Search</button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+            
+            
+            <!--filter-->
+            <div class="filter-container">
+                <div class="filter-icon" id="filter-icon">
+                    <i style="font-size:24px" class="fa">&#xf0c9;</i>
                 </div>
-            </div> 
-            <div class="highlight-card">
-                <img class="highlight-img" src="beans and all food.png">
-                <div class="highlight-desc">
-                    <h4>All food and Beans</h4>
-                    <p class="price">UGX 8,000</p>
+                <div class="filter-dropdown" id="filter-dropdown">
+                  <ul>
+                    <li><a href="/category/food">Food</a></li>
+                    <li><a href="/category/drinks">Drinks</a></li>
+                    <li><a href="/category/desserts">Desserts</a></li>
+                    <li><a href="/category/snacks">Snacks</a></li>
+                  </ul>
                 </div>
-            </div> 
-            <div class="highlight-card">
-                <img class="highlight-img" src="rice and beef.jpg">
-                <div class="highlight-desc">
-                    <h4>Rice and Beef</h4>
-                    <p class="price">UGX 9,000</p>
-                </div>
-            </div> 
+              </div>
+        <!-- Navigation -->
+        <nav class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="men.html">Menu</a>
+            <a href="hotel.html">Hotels</a>
+            <a href="#contact-content">Contact Us</a>
+        </nav>
+    </header>
+            <!--first row-->
+    <div class="food-items">
+        <div class="food-item" data-id="pan fry chicken and chips">
+            <img src="pan fry chicken and chips.jpg" class="item-image" alt="pan fry chicken and chips">
+            <h3>Pan fry chicken and chips</h3>
+            <p>Description: Delicious food</p>
+            <p>Price: UGX 40000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" data-id="kitchen spaghetti">
+            <img src="kitchen spaghetti.jpg" class="item-image" alt="kitchen spaghetti">
+            <h3>kitchen spaghetti</h3>
+            <p>Description: Tasty snack</p>
+            <p>Price: UGX 23000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" class="item-image" data-id="whole fish fried">
+            <img src="whole fish fried.jpg" alt="whole fish fried">
+            <h3>Fried fish</h3>
+            <p>Description: Tasty soup</p>
+            <p>Price: UGX 30000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" class="item-image" data-id="river and chips">
+            <img src="river and chips.jpg" alt="river and chips">
+            <h3>River and chips</h3>
+            <p>Description: Tasty dish</p>
+            <p>Price: UGX 30000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+    </div>
+    <!--second row-->
+    <div class="food-items">
+        <div class="food-item" data-id="river plus food">
+            <img src="river plus food.jpg" class="item-image" alt="river plus food">
+            <h3>River plus food</h3>
+            <p>Description: Delicious food</p>
+            <p>Price: UGX 25000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" data-id="rice and beef">
+            <img src="rice and beef.jpg" class="item-image" alt="rice and beef">
+            <h3>Rice and beef</h3>
+            <p>Description: Tasty meal</p>
+            <p>Price: UGX 7000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" class="item-image" data-id="plain rice">
+            <img src="plain rice.jpg" alt="plain rice">
+            <h3>Plain rice</h3>
+            <p>Description: Tasty Dish</p>
+            <p>Price: UGX 80000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" class="item-image" data-id="quarter chicken with chips">
+            <img src="quarter chicken with chips.jpg" alt="quarter chicken with chips">
+            <h3>Quarter chicken with chips</h3>
+            <p>Description: Tasty Dish</p>
+            <p>Price: UGX 45000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+    </div>
+     <!--third row-->
+     <div class="food-items">
+        <div class="food-item" data-id="breakfast">
+            <img src="breakfast.jpg" class="item-image" alt="breakfast">
+            <h3>breakfast</h3>
+            <p>Description: Delicious food</p>
+            <p>Price: UGX 60000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" data-id="egg flied rice">
+            <img src="egg flied rice.jpg" class="item-image" alt="egg flied rice">
+            <h3>egg flied rice</h3>
+            <p>Description: Tasty meal</p>
+            <p>Price: UGX 7000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" class="item-image" data-id="egg rolex with chips">
+            <img src="egg rolex with chips.jpg" alt="egg rolex with chips">
+            <h3>egg rolex with chips</h3>
+            <p>Description: Tasty food</p>
+            <p>Price: UGX 80000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
+        </div>
+        <div class="food-item" class="item-image" data-id="Egg spagheti">
+            <img src="Egg spagheti.jpg" alt="Egg spagheti">
+            <h3>Egg spagheti</h3>
+            <p>Description: Tasty snack</p>
+            <p>Price: UGX 80000</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="quantity-controls" style="display: none;">
+                <button class="minus">-</button>
+                <span class="item-quantity">0</span>
+                <button class="plus">+</button>
+            </div>
         </div>
     </div>
     
-<div class="color">
-    <!--main menus / order-->
-    <div class="main-menus">
-        <!--filter section-->
-        <div class="main-filter">
-            <div>
-                <h2 class="main-title">Menu <br>Category</h2>
-                <div class="main-arrow">
-                    <ion-icon  class="back-menus" name="chevron-back-circle-outline"></ion-icon>
-                    <ion-icon  class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
-
+        <!--fourth row-->
+        <div class="food-items">
+            <div class="food-item" data-id="Family Luwombo">
+                <img src="Family Luwombo.jpeg" class="item-image" alt="Family Luwombo">
+                <h3>Family Luwombo</h3>
+                <p>Description: Delicious food</p>
+                <p>Price: UGX 60000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
                 </div>
             </div>
-            <div class="filter-wrapper">
-                <div class="filter-card">
-                    <div class="filter-icon">
-                        <ion-icon name="restaurant-outline"></ion-icon>
-
-                    </div>
-                    <p>All menus</p>
+            <div class="food-item" data-id="egg flied rice">
+                <img src="egg flied rice.jpg" class="item-image" alt="egg flied rice">
+                <h3>egg flied rice</h3>
+                <p>Description: Tasty meal</p>
+                <p>Price: UGX 7000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
                 </div>
-                <div class="filter-card">
-                    <div class="filter-icon">
-                        <ion-icon name="Fast-food-outline"></ion-icon>
-                    </div>
-                    <p>Chicken</p>
-                </div>
-                <div class="filter-card">
-                    <div class="filter-icon">
-                        <ion-icon name="pizza-outline"></ion-icon>
-                    </div>
-                    <p>Pizza</p>
             </div>
-            <div class="filter-card">
-                <div class="filter-icon">
-                    <ion-icon name="wine-outline"></ion-icon>
+            <div class="food-item" class="item-image" data-id="Family rolex">
+                <img src="Family rolex.jpeg" alt="Family rolex">
+                <h3>Family rolex</h3>
+                <p>Description: Tasty food</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
                 </div>
-                <p>Wine</p>
+            </div>
+            <div class="food-item" class="item-image" data-id="family food large">
+                <img src="family food large.jpg" alt="family food large">
+                <h3>family food large</h3>
+                <p>Description: Tasty snack</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
         </div>
         
-        <div class="filter-card">
-            <div class="filter-icon">
-                <ion-icon name="ice-cream-outline"></ion-icon>
+         <!--fifth row-->
+         <div class="food-items">
+            <div class="food-item" data-id="Balanced meal">
+                <img src="Balanced meal.jpeg" class="item-image" alt="Balanced meal">
+                <h3>Balanced meal</h3>
+                <p>Description: Delicious food</p>
+                <p>Price: UGX 60000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
             </div>
-            <p>Ice-cream</p>
-    </div>
-    <div class="filter-card">
-        <div class="filter-icon">
-            <ion-icon name="cafe-outline"></ion-icon>
+            <div class="food-item" data-id="coca cola">
+                <img src="coca cola.jpg" class="item-image" alt="coca cola">
+                <h3>coca cola</h3>
+                <p>Description: Tasty meal</p>
+                <p>Price: UGX 7000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="chips+chicken+soda">
+                <img src="chips+chicken+soda.jpg" alt="chips+chicken+soda">
+                <h3>chips+chicken+soda</h3>
+                <p>Description: Tasty food</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="chips">
+                <img src="chips.jpeg" alt="chips">
+                <h3>chips</h3>
+                <p>Description: Tasty snack</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
         </div>
-        <p>Coffee</p>
-    </div>
-    <div class="filter-card">
-        <div class="filter-icon">
-            <ion-icon name="fish-outline"></ion-icon>
+             
+         <!--sixth row-->
+         <div class="food-items">
+            <div class="food-item" data-id="deep flied chicken">
+                <img src="deep flied chicken.jpg" class="item-image" alt="deep flied chicken">
+                <h3>deep flied chicken</h3>
+                <p>Description: Delicious food</p>
+                <p>Price: UGX 60000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" data-id="chicken pilau3">
+                <img src="chicken pilau3.jpg" class="item-image" alt="chicken pilau3">
+                <h3>chicken pilau3</h3>
+                <p>Description: Tasty meal</p>
+                <p>Price: UGX 7000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="boiled fish and chips">
+                <img src="boiled fish and chips.jpg" alt="boiled fish and chips">
+                <h3>boiled fish and chips</h3>
+                <p>Description: Tasty food</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="chicken rice">
+                <img src="chicken rice.avif" alt="chicken rice">
+                <h3>chicken rice</h3>
+                <p>Description: Tasty snack</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
         </div>
-        <p>Sea food</p>
-    </div>
-    <div class="filter-card">
-        <div class="filter-icon">
-            <ion-icon name="nutrition-outline"></ion-icon>
+         <!--seventh row-->
+         <div class="food-items">
+            <div class="food-item" data-id="black coffee">
+                <img src="black coffee.jpg" class="item-image" alt="black coffee">
+                <h3>black coffee</h3>
+                <p>Description: Delicious food</p>
+                <p>Price: UGX 60000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" data-id="batter milk">
+                <img src="batter milk.jpg" class="item-image" alt="batter milk">
+                <h3>batter milk</h3>
+                <p>Description: Tasty meal</p>
+                <p>Price: UGX 7000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="black coffee">
+                <img src="black coffee.jpg" alt="black coffee">
+                <h3>black coffee</h3>
+                <p>Description: Tasty food</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="Africa coffee">
+                <img src="Africa coffee.jpg" alt="Africa coffee">
+                <h3>Africa coffee</h3>
+                <p>Description: Tasty snack</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
         </div>
-        <p>Healthy food</p>
+         <!--eighth row-->
+         <div class="food-items">
+            <div class="food-item" data-id="goat stew">
+                <img src="goat stew.jpg" class="item-image" alt="goat stew">
+                <h3>goat stew</h3>
+                <p>Description: Delicious food</p>
+                <p>Price: UGX 60000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" data-id="chicken piece">
+                <img src="chicken piece.png" class="item-image" alt="chicken piece">
+                <h3>chicken piece</h3>
+                <p>Description: Tasty meal</p>
+                <p>Price: UGX 7000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="beef pilau">
+                <img src="beef pilau.jpg" alt="beef pilau">
+                <h3>beef pilau</h3>
+                <p>Description: Tasty food</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="chicken curry masala">
+                <img src="chicken curry masala.jpg" alt="chicken curry masala">
+                <h3>chicken curry masala</h3>
+                <p>Description: Tasty snack</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
+        <!--ninth row-->
+         <div class="food-items">
+            <div class="food-item" data-id="kalo">
+                <img src="kalo.jpeg" class="item-image" alt="kalo">
+                <h3>kalo</h3>
+                <p>Description: Delicious food</p>
+                <p>Price: UGX 60000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" data-id="katogo">
+                <img src="katogo.png" class="item-image" alt="katogo">
+                <h3>katogo</h3>
+                <p>Description: Tasty meal</p>
+                <p>Price: UGX 7000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="flied beans">
+                <img src="flied beans.jpg" alt="flied beans">
+                <h3>flied beans</h3>
+                <p>Description: Tasty food</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="Flied matooke+beef">
+                <img src="Flied matooke+beef.jpeg" alt="Flied matooke+beef">
+                <h3>Flied matooke+beef</h3>
+                <p>Description: Tasty snack</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
+         <!--ninth row-->
+         <div class="food-items">
+            <div class="food-item" data-id="passion juice">
+                <img src="passion juice.jpg" class="item-image" alt="passion juice">
+                <h3>passion juice</h3>
+                <p>Description: Delicious food</p>
+                <p>Price: UGX 60000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" data-id="indian milk">
+                <img src="indian milk.jpg" class="item-image" alt="indian milk">
+                <h3>indian milk</h3>
+                <p>Description: Tasty meal</p>
+                <p>Price: UGX 7000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="lime juice">
+                <img src="lime juice.jpg" alt="lime juice">
+                <h3>flime juice</h3>
+                <p>Description: Tasty food</p>
+                <p>Price: UGX 80000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="food-item" class="item-image" data-id="mango juice">
+                <img src="mango juice.jpg" alt="mango juice">
+                <h3>mango juice</h3>
+                <p>Description: Tasty snack</p>
+                <p>Price: UGX 800000</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-controls" style="display: none;">
+                    <button class="minus">-</button>
+                    <span class="item-quantity">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
+    <div class="order-form-container" style="display: none;">
+        <form id="order-form">
+            <h3>Order Details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" required>
+            <label for="whatsapp">WhatsApp (Optional):</label>
+            <input type="text" id="whatsapp">
+            <label for="email">Email (Optional):</label>
+            <input type="email" id="email">
+            <button type="submit" class="order-btn">Place Order</button>
+        </form>
     </div>
 </div>
-</div>
-<hr class="divider">
 
-
-
-
-<div class="select-food">
-    <div class="food-container">
-        <div class="food-item" data-id="1" data-price="45000">
-            <img src="Fried chicken.png" alt="Burger" class="food-img">
-            <h3 class="food-name">Burger</h3>
-            <p class="food-description">Juicy grilled burger with lettuce, tomato, and cheese.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="2" data-price="50000">
-            <img src="goat pizza.png" alt="Pizza" class="food-img">
-            <h3 class="food-name">goat pizza</h3>
-            <p class="food-description">Wood-fired pizza with pepperoni, mozzarella, and fresh basil.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="3" data-price="8000">
-            <img src="katogo.png" alt="Salad" class="food-img">
-            <h3 class="food-name">Katogo</h3>
-            <p class="food-description">Fresh garden salad with a mix of lettuce, tomato, and cucumber.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <br>
+        <a href="payment.html" class="payment-link">Proceed to Order</a>
     </div>
-    <div class="food-container">
-        <div class="food-item" data-id="4" data-price="30000">
-            <img src="burger.jpeg" alt="Burger" class="food-img">
-            <h3 class="food-name">Burger</h3>
-            <p class="food-description">Juicy grilled burger with lettuce, tomato, and cheese.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
+</section>
 
-        <div class="food-item" data-id="5" data-price="15000">
-            <img src="pilau5.png" alt="Pizza" class="food-img">
-            <h3 class="food-name">goat pizza</h3>
-            <p class="food-description">Grilled meat.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
+<style>
+    .contact-section {
+        padding: 50px;
+        background: #f8f9fa;
+        text-align: center;
+    }
+    #contactForm {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 300px;
+        margin: auto;
+    }
+    #contactForm input, #contactForm textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    #contactForm textarea {
+        resize: vertical;
+        height: 100px;
+    }
+    #contactForm button {
+        padding: 10px;
+        background: #ff5733;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .payment-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .payment-link:hover {
+        background: #0056b3;
+    }
+</style>
 
-        <div class="food-item" data-id="5" data-price="5000">
-            <img src="rolex.png" alt="Salad" class="food-img">
-            <h3 class="food-name">Rolex</h3>
-            <p class="food-description">Rolex of eggs</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="food-container">
-        <div class="food-item" data-id="6" data-price="15000">
-            <img src="chips and chicken.png" alt="Burger" class="food-img">
-            <h3 class="food-name">Chips and chicken</h3>
-            <p class="food-description">Chips and chicken</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="2" data-price="12.99">
-            <img src="photo1.png" alt="Pizza" class="food-img">
-            <h3 class="food-name">Beef</h3>
-            <p class="food-description">Wood-fired beef with pepperoni, mozzarella, and fresh basil.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="3" data-price="7.49">
-            <img src="whole chopped chicken.png" alt="Salad" class="food-img">
-            <h3 class="food-name">Whole chopped chicken</h3>
-            <p class="food-description">Good chopped chicken fried with natural oils.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="food-container">
-        <div class="food-item" data-id="1" data-price="8.99">
-            <img src="roasted goat.png" alt="Burger" class="food-img">
-            <h3 class="food-name">Roasted goat meat</h3>
-            <p class="food-description">Delicious roasted meat.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="2" data-price="12.99">
-            <img src="spicy chicken pizza.png" alt="Pizza" class="food-img">
-            <h3 class="food-name">spicy chicken pizza</h3>
-            <p class="food-description">spicy chicken pizza from local chicken</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="3" data-price="7.49">
-            <img src="local food + chicken.png" alt="Salad" class="food-img">
-            <h3 class="food-name">Local food with Chicken</h3>
-            <p class="food-description">Local food sweet with Chicken</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="food-container">
-        <div class="food-item" data-id="1" data-price="8.99">
-            <img src="local food.png" alt="Burger" class="food-img">
-            <h3 class="food-name">local food</h3>
-            <p class="food-description">African local food.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="2" data-price="12.99">
-            <img src="Chicken1.png" alt="Pizza" class="food-img">
-            <h3 class="food-name">Whole chicken</h3>
-            <p class="food-description">Delicious chicken for your family</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="3" data-price="7.49">
-            <img src="katogo.png" alt="Salad" class="food-img">
-            <h3 class="food-name">Katogo</h3>
-            <p class="food-description">Fresh garden salad with a mix of lettuce, tomato, and cucumber.</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="food-container">
-        <div class="food-item" data-id="1" data-price="8.99">
-            <img src="kakomaddo 3.png" alt="Burger" class="food-img">
-            <h3 class="food-name">Kakomando</h3>
-            <p class="food-description">Delicious kakomaddo of beans</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="2" data-price="12.99">
-            <img src="pizza at cafe de forte.jpg" alt="Pizza" class="food-img">
-            <h3 class="food-name">Pizza</h3>
-            <p class="food-description">Chicken pizza</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="food-item" data-id="3" data-price="7.49">
-            <img src="rice and beef.jpg" alt="Salad" class="food-img">
-            <h3 class="food-name">Rice and beef</h3>
-            <p class="food-description">Fresh garden pilau and beef with a mix of lettuce, green papers, tomato, and onions</p>
-            <div class="food-actions">
-                <button class="btn-add">Add to Cart</button>
-                <div class="quantity-controls">
-                    <button class="btn-decrease">-</button>
-                    <span class="quantity">0</span>
-                    <button class="btn-increase">+</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cart-container">
-        <h2>Your Cart</h2>
-        <div id="cart-items"></div>
-        <div class="cart-total">
-            <strong>Total: $<span id="cart-total">0.00</span></strong>
-        </div>
-        <button id="checkout-button">Checkout</button>
-    </div>
-
-    
-</div>
-
-
-
-
-
-</div>
-</div>
-
+   
+    <script src="Home.js"></script>
+</html>
 </body>
 <!-- Footer Section -->
 <footer class="footer">
     <div class="footer-container">
         <!-- Company Info -->
         <div class="footer-col">
-            <h3>About Food Time</h3>
+            <h3>About SPARK</h3>
             <p>Get the food you love, wherever you are. Foodspark makes ordering effortless. Browse local menus, track your order, and enjoy your favorite meals at home, office, or on-the-go.</p>
         </div>
 
@@ -521,6 +733,11 @@ Recommendations
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
                 <li><a href="#">FAQs</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
@@ -549,55 +766,9 @@ Recommendations
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2024 Food Time. All rights reserved.</p>
+        <p class="footer-bottom">&copy; 2024 SPARK. All rights reserved.</p>
     </div>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="index.js">
-    let cart = [];
-let totalPrice = 0;
-
-function updateQuantity(item, change) {
-    const quantityElement = document.getElementById(`${item}-quantity`);
-    let currentQuantity = parseInt(quantityElement.innerText);
-
-    currentQuantity += change;
-    if (currentQuantity < 0) currentQuantity = 0; // Prevent negative quantity
-
-    quantityElement.innerText = currentQuantity;
-}
-
-function addToCart(itemName, itemPrice) {
-    const quantityElement = document.getElementById(`${itemName.toLowerCase()}-quantity`);
-    const quantity = parseInt(quantityElement.innerText);
-
-    if (quantity > 0) {
-        cart.push({ name: itemName, price: itemPrice, quantity: quantity });
-        totalPrice += itemPrice * quantity;
-
-        // Update cart display
-        updateCartDisplay();
-        
-        // Reset quantity after adding to cart
-        quantityElement.innerText = 0;
-    } else {
-        alert(`Please select at least one ${itemName}.`);
-    }
-}
-
-function updateCartDisplay() {
-    const cartItemsElement = document.getElementById('cart-items');
-    cartItemsElement.innerHTML = ''; // Clear current cart display
-
-    cart.forEach(item => {
-        const listItem = document.createElement('li');
-        listItem.innerText = `${item.name} - $${item.price} x ${item.quantity}`;
-        cartItemsElement.appendChild(listItem);
-    });
-
-    document.getElementById('total-price').innerText = totalPrice.toFixed(2);
-}
-</script>
-
 </html>
